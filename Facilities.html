@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Facilities - Aster Rose Farm">
+    <title>Facilities - Aster Rose Farm</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <h1><a href="index.html">Aster Rose Farms</a></h1>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="facilities.html" class="active">Facilities</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Page Header -->
+        <section class="hero" style="background-image: url('images/Barn.jpg');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Our Facilities</h1>
+            </div>
+        </section>
+
+        <!-- Facilities Details -->
+        <section class="facilities-overview">
+            <div class="container">
+                <h2>World-Class Amenities</h2>
+                <div class="facility-cards">
+                    <div class="facility-card">
+                        <h3>All-Weather Ring</h3>
+                        <p>150'x230' all-weather ring, one of the largest in the area. New GGT footing laser leveled by Wordley Martin.</p>
+                    </div>
+                    <div class="facility-card">
+                        <h3>Maintenance Equipment</h3>
+                        <p>New Wordley Martin drag and new John Deere tractor ready for arena maintenance.</p>
+                    </div>
+                    <div class="facility-card">
+                        <h3>Paddocks</h3>
+                        <p>8 lush paddocks including 2 mini paddocks with ample grazing and turnout space.</p>
+                    </div>
+                    <div class="facility-card">
+                        <h3>Lunging Ring</h3>
+                        <p>Dedicated lunging ring for training and conditioning.</p>
+                    </div>
+                    <div class="facility-card">
+                        <h3>Jump Set</h3>
+                        <p>Full set of 18 jumps available to exceed your riding potential.</p>
+                    </div>
+                    <div class="facility-card">
+                        <h3>Barn Features</h3>
+                        <p>1 tack room with AC, rider's lounge, and beautiful new covered gazebo with fan, lights, and speakers.</p>
+                    </div>
+                    <div class="facility-card">
+                        <h3>Main Barn</h3>
+                        <p>8-stall premium boarding with climate control and natural lighting.</p>
+                    </div>
+                    <div class="facility-card">
+                        <h3>Annex Barn</h3>
+                        <p>12-stall annex for flexible seasonal and full-time boarding options.</p>
+                    </div>
+                    <div class="facility-card">
+                        <h3>Wash Racks</h3>
+                        <p>2 professional wash racks with hot water and drainage.</p>
+                    </div>
+                    <div class="facility-card">
+                        <h3>Fly Spray System</h3>
+                        <p>New fly spray system throughout barns for horse comfort.</p>
+                    </div>
+                    <div class="facility-card">
+                        <h3>Horse Walker</h3>
+                        <p>Automatic walker for optimal conditioning and exercise.</p>
+                    </div>
+                    <div class="facility-card">
+                        <h3>Storage</h3>
+                        <p>Dedicated hay storage and equipment storage facilities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Info -->
+        <section class="about">
+            <div class="container">
+                <h2>Premium Environment</h2>
+                <p>Aster Rose Farm provides an inclusive, kind, and professional environment where you and your horses will thrive. Our elegant matching pole barn and seasonal apartments are available for those seeking extended boarding arrangements.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Aster Rose Farm. All Rights Reserved.</p>
+            <p>
+                <a href="tel:+15616316638">(561) 631-6638</a> | 
+                <a href="mailto:johan@bluerose-edelweiss.com">johan@bluerose-edelweiss.com</a><br>
+                4591 South Road, Wellington, FL 33414<br>
+                <a href="https://www.google.com/maps?q=4591+South+Road+Wellington+FL+33414" target="_blank">Google Directions</a><br>
+                <a href="https://www.facebook.com/p/Aster-Rose-Farm-61578276521560/" target="_blank">Facebook</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+
+        // Close menu when link clicked
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navMenu').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

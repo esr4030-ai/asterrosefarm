@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aster Rose Farm - Premium Equestrian Boarding in Wellington, Florida">
+    <title>Aster Rose Farm</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <h1><a href="index.html">Aster Rose Farms</a></h1>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" style="background-image: url('images/Arial-view.jpg');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Aster Rose Farm</h1>
+                <p>A World Class Equestrian Facility - 1/2 Mile from Wellington Equestrian Center</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about">
+            <div class="container">
+                <h2>About Aster Rose Farm</h2>
+                <p>Aster Rose Farm offers premium seasonal and full-time boarding for discerning equestrians. Located just 1/2 mile from Wellington Equestrian Center, we provide world-class facilities and professional grounds maintenance.</p>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-overview">
+            <div class="container">
+                <h2>Our Team</h2>
+                <div class="team-cards">
+                    <div class="facility-card">
+                        <h3>Stacey Thiele</h3>
+                        <p>Co-Founder & Owner</p>
+                    </div>
+                    <div class="facility-card">
+                        <h3>Johan Rosenberg</h3>
+                        <p>Co-Founder, Owner & Facilities Manager</p>
+                    </div>
+                    <div class="facility-card">
+                        <h3>Alyce Rosenberg</h3>
+                        <p>Jumper - 1.45m</p>
+                    </div>
+                    <div class="facility-card">
+                        <h3>Sophie Rosenberg</h3>
+                        <p>Hunter Rider - 3 Foot</p>
+                    </div>
+                </div>
+                <p style="text-align: center;"><a href="team.html" style="color: var(--primary-blue); font-weight: 600;">View Full Team Bios</a></p>
+            </div>
+        </section>
+
+        <!-- Facilities Section -->
+        <section class="facilities-overview">
+            <div class="container">
+                <h2>Our Facilities</h2>
+                <div class="facility-cards">
+                    <div class="facility-card">
+                        <h3>Main Barn</h3>
+                        <p>8-stall premium boarding with climate control and natural lighting.</p>
+                    </div>
+                    <div class="facility-card">
+                        <h3>Annex Barn</h3>
+                        <p>12-stall annex for flexible seasonal and full-time boarding options.</p>
+                    </div>
+                    <div class="facility-card">
+                        <h3>Horse Walker</h3>
+                        <p>Automatic walker for optimal conditioning and exercise.</p>
+                    </div>
+                    <div class="facility-card">
+                        <h3>Wash Racks</h3>
+                        <p>2 professional wash racks with hot water and drainage.</p>
+                    </div>
+                    <div class="facility-card">
+                        <h3>Tack Room</h3>
+                        <p>Large tack room with secure storage for equipment and supplies.</p>
+                    </div>
+                    <div class="facility-card">
+                        <h3>Storage</h3>
+                        <p>Dedicated hay storage and equipment storage facilities.</p>
+                    </div>
+                </div>
+                <p style="text-align: center;"><a href="facilities.html" style="color: var(--primary-blue); font-weight: 600;">View Full Facilities</a></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Aster Rose Farm. All Rights Reserved.</p>
+            <p>
+                <a href="tel:+15616316638">(561) 631-6638</a> | 
+                <a href="mailto:johan@bluerose-edelweiss.com">johan@bluerose-edelweiss.com</a><br>
+                4591 South Road, Wellington, FL 33414<br>
+                <a href="https://www.google.com/maps?q=4591+South+Road+Wellington+FL+33414" target="_blank">Google Directions</a><br>
+                <a href="https://www.facebook.com/p/Aster-Rose-Farm-61578276521560/" target="_blank">Facebook</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+
+        // Close menu when link clicked
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navMenu').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
